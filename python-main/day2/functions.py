@@ -23,31 +23,3 @@ print(Cal(2,3))
 print(Cal(5,3, "subtract"))
 print(Cal(5,4, "multiply"))
 print(Cal(5,4, "div"))
-
-# local scope
-def local():
-    message = "Hello"
-    print(message)
-local()
-
-# Global scope
-
-text = "Hello"
-
-def example():
-    print(text)
-
-example()
-print(text)
-
-# Global key word
-
-count = 0
-
-def result():
-    global count
-    count +=1
-result()
-result()
-    
-print(count)
