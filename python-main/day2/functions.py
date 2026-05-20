@@ -39,3 +39,15 @@ def example():
 
 example()
 print(text)
+
+# Global key word
+
+count = 0
+
+def result():
+    global count
+    count +=1
+result()
+result()
+    
+print(count)
